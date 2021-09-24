@@ -1,3 +1,6 @@
+Was made with:
+https://github.com/MariaLkd/ReactTrainerCrud_RestController
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
