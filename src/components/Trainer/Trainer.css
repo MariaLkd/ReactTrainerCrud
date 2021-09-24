@@ -1,0 +1,15 @@
+.table{
+    margin-top: 1pc;
+}
+
+#checkbox{
+    display:none;
+}
+
+#new-delete-button{
+    text-align: left;
+}
+
+#delete-button{
+    margin-left: 0.4pc;
+}

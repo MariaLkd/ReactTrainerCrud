@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Trainer from "./components/Trainer/Trainer";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import EditTrainer from "./components/Trainer/EditTrainer/EditTrainer";
+import Menu from "./components/Menu";
+import Footer from "./components/Footer";
+import CreateTrainer from "./components/Trainer/CreateTrainer/CreateTrainer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Menu/>
+        <Switch>
+          <Route exact path="/">
+            <Trainer />
+          </Route>
+          <Route exact path="/edit/:id">
+            <EditTrainer />
+          </Route>
+          <Route exact path="/create">
+            <CreateTrainer/>
+          </Route>
+        </Switch>
+        <Footer/>
+      </Router>
     </div>
   );
 }
