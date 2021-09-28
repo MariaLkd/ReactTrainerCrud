@@ -1,5 +1,5 @@
 Was made with:
-https://github.com/MariaLkd/ReactTrainerCrud_RestController
+https://github.com/MariaLkd/ReactTrainerCrudBack
 
 # Getting Started with Create React App
 
